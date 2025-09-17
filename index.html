@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AM²S Shopping</title>
+  <link rel="icon" href="https://img.favpng.com/18/0/24/e-commerce-online-shopping-icon-png-favpng-YmXHT9PhRpRwEdPZ8Qm90BSPc.jpg">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛒🛍️✨ AM²S SHOPPING</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('sales')">Sales</button>
+      <button onclick="showSection('cart')">Cart</button>
+      <button onclick="showSection('orders')">Orders</button>
+      <button onclick="showSection('wishlist')">Wishlist</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section active">
+     <center><h2>Familiar Products</h2> </center> 
+      <div id="productList" class="product-container"></div>
+    </section>
+
+    <section id="sales" class="section">
+      <h2>🔥 Mega Sales</h2>
+      <p>Get 50% off on selected items. Limited time offer!</p>
+    </section>
+
+    <section id="cart" class="section">
+      <h2>Your Cart</h2>
+      <ul id="cartList"></ul>
+    </section>
+
+    <section id="orders" class="section">
+      <h2>Your Orders</h2>
+      <ul id="orderList"></ul>
+    </section>
+
+    <section id="wishlist" class="section">
+      <h2>Your Wishlist</h2>
+      <ul id="wishlistList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
